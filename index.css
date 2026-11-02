@@ -1,0 +1,440 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/* Membuat style pada header */
+.header{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: bisque;
+}
+
+/* Membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: cornsilk;
+    color: brown;
+}
+
+
+.column{
+    float: left;
+    padding: 10px;
+    background-color: floralwhite;
+}
+/* Membuat style pada column kanan-kiri */
+.column.side{
+    width: 25%;
+}
+
+/* Membuat style pada column tengah */
+.column.middle{
+    width: 50%;
+}
+
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    background-color: lemonchiffon;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    background-color: brown;
+    font: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color:rgb(10, 19, 72);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.foto img{
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease;
+    opacity: 0.5s ease;
+}
+
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px darkblue;
+}
+div.isi{
+    text-align: justify;
+    color: white;
+}
+
+h2{
+    color: white;
+    background-color: brown;
+    font: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+div.makanan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.froyo{
+    height: 300px;
+    width: 300x;
+    background-color: rgb(6, 14, 53);
+}
+
+div.froyo:hover{
+    height: 300px;
+    width: 300px;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10 px white;
+}
+
+div.pizza{
+  height: 300px;
+    width: 300x;
+    background-color:rgb(6, 14, 53);
+}
+
+div.pizza:hover{
+    height: 300px;
+    width: 300px;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10 px white;
+}
+
+div.smoothies{
+    height: 300px;
+    width: 300x;
+    background-color: rgb(6, 14, 53);
+}
+
+div.smoothies:hover{
+    height: 300px;
+    width: 300px;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10 px white;
+}
+
+h3{
+    color: brown;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+h4{
+    color: brown;
+    background-color: white;
+    text-align: center;
+    font-size: 35px;
+    font: bold;
+}
+
+div.olivia{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.olivia img{
+    position: absolute;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease;
+    opacity: 0.5s ease;
+}
+
+div.olivia img.album{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.olivia:hover img.album{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.olivia img.lirik{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.olivia:hover img.lirik{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+div.pink{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.pink img{
+    position: absolute;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease;
+    opacity: 0.5s ease;
+}
+
+div.pink img.album{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.pink:hover img.album{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.pink img.lirik{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.pink:hover img.lirik{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+div.taylor{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.taylor img{
+    position: absolute;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease;
+    opacity: 0.5s ease;
+}
+
+div.taylor img.album{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.taylor:hover img.album{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.taylor img.lirik{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.taylor:hover img.lirik{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+div.katy{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.katy img{
+    position: absolute;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease;
+    opacity: 0.5s ease;
+}
+
+div.katy img.album{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.katy:hover img.album{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.katy img.lirik{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.katy:hover img.lirik{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+
+.music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.olivia,
+.pink,
+.taylor,
+.katy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+audio {
+    width: 265px;
+    gap: 500px;
+}
+
+body{
+  background-image: url(download\ \(31\).jpg);  
+  background-size: cover;
+  background-position: center;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th{
+    text-align: center;
+    height: 40px;
+    padding: 2px;
+    background-color: beige;
+}
+
+tr{
+    background-color: antiquewhite;
+}
+tr:nth-child(even){
+    background-color: blanchedalmond;
+}
+
+tr:hover{
+    background-color: pink;
+}

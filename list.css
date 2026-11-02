@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/* Membuat style pada header */
+.header{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: bisque;
+}
+
+/* Membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: cornsilk;
+    color: brown;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+    background-color: floralwhite;
+}
+/* Membuat style pada column kanan-kiri */
+.column.side{
+    width: 25%;
+}
+
+/* Membuat style pada column tengah */
+.column.middle{
+    width: 50%;
+}
+
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    background-color: lemonchiffon;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    background-color: brown;
+    font: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+/* list style */
+ol{
+    border-radius: 1 px solid black;
+    background-color: bisque;
+    margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+
+ol li{
+border: 1px solid black;
+padding: 5px;
+background-color: pink;
+}
+
+ul{
+    border-radius: 1 px solid black;
+    background-color: bisque;
+    margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+
+body{
+  background-image: url(download\ \(31\).jpg);  
+  background-size: cover;
+  background-position: center;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th{
+    text-align: center;
+    height: 40px;
+    padding: 2px;
+    background-color: beige;
+}
+
+tr{
+    background-color: antiquewhite;
+}
+tr:nth-child(even){
+    background-color: blanchedalmond;
+}
+
+tr:hover{
+    background-color: pink;
+}
+
+li{
+    background-color: pink;
+    border: 1px solid black;
+    margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+
+
+/* List khusus untuk icon */
+.icon-list {
+    list-style: none;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: bisque;
+}
+
+/* Mengatur gambar dan tulisan */
+.icon-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: pink;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Ukuran gambar icon */
+.icon-item svg {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+ul.kotak {
+    border: 1px solid black;
+    background-color: bisque;
+    list-style-position: inside;
+    margin: 10px 10px 10px 25px;
+    padding: 15px 30px 15px 20px;
+}
+
+ul.kotak li {
+    border: 1px solid black;
+    background-color: pink;
+    padding: 5px;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+/* List Section */
+.list-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #F2F8F6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Ordered List */
+ol {
+    margin-left: 25px;
+    padding-left: 20px;
+}
+
+/* Unordered List */
+ul {
+    margin-left: 25px;
+    padding-left: 20px;
+}
+
+/* List Items */
+li {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+/* Nested Lists */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin: 10px 30px;
+    padding: 10px 30px;
+    list-style-position: outside;
+}
+
+ol ol li,
+ol ul li,
+ul ol li,
+ul ul li {
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: pink;
+    line-height: 1.5;
+}
+
+/* Icons */
+.icon-list {
+    list-style: none;
+}
+
+.icon-list li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.icon-list i {
+    display: inline-block;
+    width: 40px;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #416B63;
+}
+
+.icon-list svg {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    fill: #416B63;
+}
+
+/* Nav fix: keep the nav the same as index.css */
+.topnav li {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+/* Minuman & Icon list: same box style as the makanan list */
+ul.kotak {
+    border: 1px solid black;
+    background-color: bisque;
+    list-style-position: inside;
+    margin: 10px 10px 10px 25px;
+    padding: 15px 30px 15px 20px;
+}
+ul.kotak li {
+    border: 1px solid black;
+    background-color: pink;
+    padding: 5px;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+/* make the icons small so the pink boxes aren't too tall */
+ul.kotak svg {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+
+h2{
+    color: white;
+    background-color: brown;
+    font: bold;
+    font-size: 35px;
+    text-align: center;
+}
