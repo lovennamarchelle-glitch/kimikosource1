@@ -1,0 +1,177 @@
+body{
+    background-image: url(China\ lights.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div.judul{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1:hover{
+    font-size: 100px;
+    color: yellow;
+    transform: scale(1.1);
+}
+
+h1{
+    color: white;
+    font: bold;
+    font-size: 80px;
+    text-align: center;
+    transition: 0.5s;
+    margin: 0;
+    background-image: url(download\ \(32\).jpg);
+}
+
+h2{
+    color: white;
+    background-color: brown;
+    font: bold;
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+div.sejarah{
+    margin: 30px auto;
+    width: 70%;
+    background-color:rgb(67, 5, 5);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.foto img{
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease;
+    opacity: 0.5s ease;
+}
+
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px darkblue;
+}
+
+.gallery {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 30px;
+    scroll-behavior: smooth;
+}
+
+.image-card {
+    position: relative;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+.image-card img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.image-card:hover img {
+    transform: scale(1.05);
+}
+
+.popup {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.4s;
+}
+
+.image-card:hover .popup {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: bisque;
+}
+
+/* Membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: cornsilk;
+    color: brown;
+}
+
+h2{
+    color: white;
+    background-color: brown;
+    font: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
